@@ -17,8 +17,8 @@
 /* ===================================================================
  * Wi-Fi
  * =================================================================== */
-#define CFG_WIFI_SSID          "SSYMK"
-#define CFG_WIFI_PASSWORD      "H0me_p@ssw0rd"
+#define CFG_WIFI_SSID          "YOUR SSID WIFI"
+#define CFG_WIFI_PASSWORD      "YOUR SSID PASSWORD"
 
 /* 0 = DHCP (recommended until the team confirms otherwise, see the
  * report's Part 10, question 8). 1 = use the static settings below. */
