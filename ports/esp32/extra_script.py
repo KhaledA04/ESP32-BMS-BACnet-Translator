@@ -14,6 +14,7 @@ if PIOENV not in (
     "esp32-poe-eth-bip",
     "xiao-esp32c3-wifi-bip",
     "m5stamplc-gateway-bip-mstp",
+    "esp32-bms-translator-wifi-bip", # Added Line
 ):
     Return()
 
@@ -26,6 +27,8 @@ bacnet_common_sources = [
     "bacnet/basic/object/ai.c",
     "bacnet/basic/object/bi.c",
     "bacnet/basic/object/bo.c",
+    "bacnet/basic/object/av.c",   #  Added line
+    "bacnet/basic/object/bv.c",   #  Added line
     "bacnet/basic/npdu/h_npdu.c",
     "bacnet/basic/datetime/datetime_mstimer.c",
     "bacnet/basic/service/h_apdu.c",
@@ -105,6 +108,10 @@ bacnet_transport_sources = {
         "bacnet/datalink/dlmstp.c",
         "bacnet/datalink/mstp.c",
         "bacnet/datalink/mstptext.c",
+    ],
+    # Added
+    "esp32-bms-translator-wifi-bip": [
+        "bacnet/datalink/bvlc.c",
     ],
 }
 
